@@ -1,30 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
 }
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
 }
+
 .center-align {
     text-align: center;
 }
-section{
+
+section {
     padding: 60px 0;
 }
-h1 , h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: hsl(210, 10%, 33%);
 }
-.btn{
+
+.btn {
     padding: 15px 30px;
     display: inline-block;
     margin-right: 15px;
@@ -33,26 +46,33 @@ h1 , h2, h3, h4, h5, h6 {
     color: white;
     font-weight: 600;
 }
-.btn1{
+
+.btn1 {
     background-color: hsl(171, 66%, 44%);
 }
-.btn2{
-    background-color:hsl(233, 100%, 69%);
+
+.btn2 {
+    background-color: hsl(233, 100%, 69%);
 }
+
 .links {
     margin-top: 25px;
 }
+
 .title-box {
     max-width: 700px;
     margin: 0 auto 3em;
 }
+
 .title-box h2 {
-    font-size: 2em; 
+    font-size: 2em;
     margin-bottom: .2em;
 }
+
 p {
     color: hsl(201, 11%, 66%);
 }
+
 /* --- hero-scetion--- */
 .hero {
     width: 100%;
@@ -66,58 +86,207 @@ p {
     align-items: center;
     padding-bottom: 0;
 }
+
 .hero .hero-content h1 {
     margin: 20px 0;
     font-size: 2.5em;
     font-weight: 600;
-} 
+}
 
 /* --------- features -------------- */
 .features-section {
     background-color: #fcfcfc;
 }
+
 .features .title-box {
     margin-bottom: 40px;
     margin-top: -10px;
 }
-.D-flex{
+
+.D-flex {
     display: flex;
 }
-.col{
+
+.col {
     width: 50%;
 }
+
 .features-container {
     padding-left: 10%;
 }
-.feature{
+
+.feature {
     margin: 20px 0;
 }
+
 .feature h3 {
     margin-bottom: 5px;
 }
+
 /* ------ devices-image-section------- */
 /* ------------------ */
 
 /* -----tools-section------ */
-.tools-section{
+.tools-section {
     background-color: #f8f8f8;
 }
+
 .tools-section .tools-box {
     margin-top: 5em;
+    justify-content: center;
 }
+
 .tools-card {
     background-color: #fff;
     padding: 30px 10px;
+    width: 300px;
 }
-.tools-card + .tools-card {
+
+.tools-card h3 {
+    margin-bottom: 1em;
+}
+
+.tools-card+.tools-card {
     margin-left: 1.7em;
 }
 
 /* -- logos-section------ */
-.logos-section .D-flex{
+.logos-section .D-flex {
     justify-content: space-around;
     align-items: center;
 }
+
 .logos-section .D-flex img {
     height: 100%;
+    width: 110px;
+}
+
+/* -------cta-links-section -------- */
+.cta-links-section {
+    background-color: #fbfbfb;
+}
+
+/* ----- footer ------- */
+footer {
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+
+footer .D-flex {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .D-flex .logo-col img {
+    width: 50px;
+}
+
+.footer .D-flex .social-links-col img+img {
+    margin-left: 20px;
+}
+
+.footer .D-flex .links-col {
+    display: flex;
+}
+
+.footer .D-flex .links-col .links-container+.links-container {
+    margin-left: 50px;
+}
+
+/* ------- media-queries ---------- */
+@media (max-width:1140px) {
+    .container {
+        padding: 0 2%;
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        font-size: 16px;
+    }
+
+    .tools-box {
+        flex-wrap: wrap;
+    }
+
+    .tools-card-3 {
+        margin-top: 20px;
+    }
+
+    .logos-section .D-flex img {
+        width: 100px;
+    }
+}
+
+@media (max-width:657px) {
+    .tools-box {
+        align-items: center;
+    }
+
+    .tools-card+.tools-card {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .logos-section .D-flex {
+        flex-direction: column;
+    }
+
+    .logos-section .D-flex img {
+        width: 120px;
+    }
+
+    .logos-section .D-flex img+img {
+        margin-top: 40px;
+    }
+
+    .D-flex .links-col {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .footer .D-flex .links-col .links-container+.links-container {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .footer .D-flex .links-col .links-container h5+h5 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 2%;
+    }
+
+    .D-flex {
+        flex-direction: column;
+    }
+
+    .btn2 {
+        margin-top: 15px;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .col+.col {
+        margin-top: 20px;
+    }
+
+    .features-container {
+        padding-left: 0;
+        text-align: center;
+    }
 }
