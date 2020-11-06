@@ -44,7 +44,7 @@ h6 {
     border-radius: 50px;
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .btn1 {
@@ -121,6 +121,7 @@ p {
 
 .feature h3 {
     margin-bottom: 5px;
+    font-weight: 400;
 }
 
 /* ------ devices-image-section------- */
@@ -144,6 +145,7 @@ p {
 
 .tools-card h3 {
     margin-bottom: 1em;
+    font-weight: 400;
 }
 
 .tools-card+.tools-card {
@@ -188,7 +190,9 @@ footer .D-flex .logo-col img {
 .footer .D-flex .links-col {
     display: flex;
 }
-
+.footer .D-flex .links-col .links-container h5{
+    font-weight: 400;
+}
 .footer .D-flex .links-col .links-container+.links-container {
     margin-left: 50px;
 }
